@@ -11,7 +11,9 @@ class PagesController extends Controller
     //
     public function contact() 	{
     	$name = 'Mike';
+    	$location ='UK';
 
-    return view('contact')->with('name', $name);	
+    return view('contact', compact('name','location'));	
+
     }
 }
